@@ -1,25 +1,27 @@
 ﻿using System;
-using System.IO;
+using System.Collections.Generic;
 
 namespace UpdateWaterFM
 {
     class Program
     {
-        static string WaterFMDir = @"C:\Ximple\WaterFMEntry";
         static void Main(string[] args)
         {
-            checkEnvironment();
+            UpdateApp application = new UpdateApp();
+            if (!application.checkEnvironment())
+                return;
 
-            Console.WriteLine("Hello World!");
+            int currentVersion = application.checkVersion();
+            List<int> availableVersions = application.GetAvailableVersions();
 
-            bool checkEnvironment()
+            foreach (int version in availableVersions)
             {
-                if (!Directory.Exists(WaterFMDir))
-                    return false;
+                if (version <= currentVersion)
+                    continue;
 
-                Directory.CreateDirectory(Path.Combine(WaterFMDir, "Updates"));
-
-                return true;
+                application.downloadFiles(version);
+                application.updateFile(version);
+                application.updateVersion(version);
             }
         }
     }
