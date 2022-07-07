@@ -1,0 +1,54 @@
+[
+  {
+    "Name": "config.xml",
+    "Path": "config.xml"
+  },
+  {
+    "Name": "ToolBar.xml",
+    "Path": "ToolBar.xml"
+  },
+  {
+    "Name": "8030111.png",
+    "Path": "Icons/MainForm/8030111.png"
+  },
+  {
+    "Name": "Asset.txt",
+    "Path": "IniReport/財產統計表.xlsx"
+  },
+  {
+    "Name": "giveWater.txt",
+    "Path": "IniReport/給水改裝明細表.xlsx"
+  },
+  {
+    "Name": "TWD_Cell.cel",
+    "Path": "WorkSpace/Projects/TaipeiWater/cell/TWD_Cell.cel"
+  },
+  {
+    "Name": "WaterFMEntry.exe",
+    "Path": "bin/WaterFMEntry.exe"
+  },
+  {
+    "Name": "WaterFMEntry.exe.config",
+    "Path": "bin/WaterFMEntry.exe.config"
+  },
+  {
+    "Name": "Ximple.Water.Addins.dll",
+    "Path": "bin/Ximple.Water.Addins.dll"
+  },
+  {
+    "Name": "Ximple.Water.Addins.dll.config",
+    "Path": "bin/Ximple.Water.Addins.dll.config"
+  },
+  {
+    "Name": "Ximple.Water.Addins.pdb",
+    "Path": "bin/Ximple.Water.Addins.pdb"
+  },
+  {
+    "Name": "features.xml",
+    "Path": "WorkSpace/Projects/TaipeiWater/xml/features/features.xml"
+  },
+  {
+    "Name": "criteria.xml",
+    "Path": "WorkSpace/Projects/TaipeiWater/xml/criteria/criteria.xml"
+  }
+]
