@@ -49,6 +49,10 @@ namespace UpdateWaterFM
                 return;
             string source = Path.Combine(sourceDir, _sourceFileName);
             string copyToPath = Path.Combine(WaterFMDir, targetPath);
+            if (targetPath.StartsWith("C:"))
+            {
+                copyToPath = targetPath;
+            }
             File.Copy(source, copyToPath, true);
         }
     }
